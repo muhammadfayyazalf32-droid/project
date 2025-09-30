@@ -1,0 +1,32 @@
+body{
+    overflow-x: hidden;
+}
+.logo{
+    height: 8vh;
+    width: 4vw;
+}
+.aerobic-class{
+    text-decoration: underline;
+    text-underline-offset: 0.7rem;
+}
+.card2{
+    height: 50vh;
+}
+@media (max-width:846px){
+    .card2{
+        height: 23vh;
+    }
+}
+@media (max-width:726px){
+    .logo{
+        width: 10vw;
+    }
+    .card1{
+        margin-top: 1rem;
+    }
+}
+@media (max-width:578px){
+    .logo{
+        width: 10vw;
+    }
+}

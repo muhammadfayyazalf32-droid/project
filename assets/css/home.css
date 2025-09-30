@@ -1,0 +1,62 @@
+.body {
+    overflow-x: hidden;
+}
+
+.logo{
+    height: 8vh;
+    width: 4vw;
+}
+.hero-btn{
+    transition: all ease-in-out 5s;
+}
+.hero-btn:hover{
+    transform: translateY(-15px);
+}
+.key-info {
+    font-size: 3.6rem;
+}
+
+.img1 {
+    height: 29vh;
+    width: 20vw;
+}
+
+.second-main-h3 {
+    text-decoration: underline;
+    text-underline-offset: 0.7rem;
+}
+.video-1{
+    height: 60vh;
+    border: 2px solid;
+}
+@media (max-width:726px) {
+    .logo{
+        width: 8vw;
+    }
+    .text-h1{
+        margin-top: 3rem;
+    }
+    .img1{
+        width: 50vw;
+        height: 40vh;
+    }
+}
+@media (max-width:486px) {
+    .img-div img{
+        width: 50vw;
+    }
+    .key-info{
+        font-size: 3rem;
+    }
+}
+@media (max-width:346px){
+    .logo{
+        width: 11vw;
+    }
+    .img-div img{
+        margin-top: 3rem;
+    }
+    .key-info{
+        font-size: 2rem;
+    }
+}

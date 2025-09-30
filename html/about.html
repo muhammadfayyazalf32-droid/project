@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="/assets/css/classes.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+    @media (max-width:726px) {
+        .logo {
+            width: 8vw;
+        }
+
+        .card1 {
+            margin-top: 1.6rem;
+        }
+    }
+
+    @media (max-width:346px) {
+        .logo {
+            width: 11vw;
+        }
+    }
+</style>
+
+<body class="bg-success">
+    <nav class="navbar navbar-expand-lg bg-white mt-3 rounded container">
+        <div class="container">
+            <img src="/assets/images/logo.jpg" alt="img" class="logo">
+            <a class="navbar-brand ms-3" href="/html/index.html">MINDFUL INTENTIONS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto me-3 gap-4">
+                    <a class="nav-link active fs-5" aria-current="page" href="/html/index.html">Home</a>
+                    <a class="nav-link active fs-5" href="/html/aerobics.html">Aerobics</a>
+                    <a class="nav-link active fs-5" href="/html/meditation.html">Meditation</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item fs-5" href="/html/classes.html">Classes</a></li>
+                            <li><a class="dropdown-item fs-5" href="/html/aerobics.html">Aerobics</a></li>
+                            <li><a class="dropdown-item fs-5" href="/html/meditation.html">Meditation</a></li>
+                            <li><a class="dropdown-item fs-5" href="/html/about.html">About us</a></li>
+                            <li><a class="dropdown-item fs-5" href="/html/contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <a class="nav-link active fs-5" href="/html/about.html">About</a>
+                    <a class="nav-link active fs-5" href="/html/contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="hero text-success">
+        <div class="div-classes bg-white py-5 text-center mt-4 container rounded-5">
+            <h1 class="classes">ABOUT US</h1>
+        </div>
+        <div class="main-div container mt-5">
+            <div class="row" data-aos="fade-up"
+     data-aos-duration="3000">
+                <div class="col-md-6 mb-3 mb-sm-0">
+                    <div class="card rounded-5 bg-white text-success">
+                        <div class="card-body ms-3 me-3 mt-3">
+                            <div class="heading-icon d-flex align-items-center">
+                                <h3 class="card-title">Experience</h3>
+                                <ion-icon name="diamond-outline" class="ms-3 fs-4"></ion-icon>
+                            </div>
+                            <p class="card-text fs-5">
+                                Discover the perfect balance of energetic aerobics and calming meditation to enhance
+                                both your physical and mental well-being. Our expert-led sessions are designed to
+                                boost your fitness levels, reduce stress, and cultivate mindfulness. Experience a
+                                transformational journey that revitalizes your body while nurturing inner peace and
+                                focus.</p>
+                            <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card1 card rounded-5">
+                        <div class="card-body ms-3 mt-3 text-success">
+                            <div class="sercie-icon d-flex align-items-center">
+                                <h3 class="card-title">Services</h3>
+                                <ion-icon name="construct-outline" class="ms-3 fs-4"></ion-icon>
+                            </div>
+                            <p class="card-text fs-5">Our aerobics website offers dynamic workout programs tailored for
+                                all fitness levels, combining cardio, strength, and flexibility training. Expert
+                                instructors guide you through engaging sessions to help you burn calories and
+                                improve endurance. We provide personalized plans and wellness tips to support your
+                                journey toward a healthier lifestyle.
+                            </p>
+                            <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div-classes bg-white py-5 text-center mt-4 container rounded-5" data-aos="fade-up"
+     data-aos-duration="3000">
+                <h1 class="classes">ABOUT DOCTORS</h1>
+            </div>
+            <div class="row mt-5 row-cols-1 row-cols-md-3 g-4" data-aos="fade-up"
+     data-aos-duration="3000">
+                <div class="col">
+                    <div class="card rounded-5 h-100 text-success pb-4">
+                        <img src="/assets/images/doctor1.png" class="card-img-top rounded-5" alt="img">
+                        <div class="card-body">
+                            <h3 class="card-title">Dr . Ahmed</h3>
+                            <p class="card-text fs-5">Dr. Ahmed, a highly experienced and certified fitness trainer and
+                                physiotherapist, has dedicated over 25 years to helping individuals achieve their health
+                                and fitness goals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-5 h-100 text-success">
+                        <img src="/assets/images/doctor2.png" class="card-img-top rounded-5" alt="img">
+                        <div class="card-body">
+                            <h3 class="card-title">Dr . Zain</h3>
+                            <p class="card-text fs-5">Dr. Zain Mohammed is a highly skilled chiropractor and sports
+                                therapist
+                                with a background as a competitive athlete in soccer, basketball, and rugby.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-5 h-100 text-success">
+                        <img src="/assets/images/doctor3.png" class="card-img-top rounded-5" alt="img">
+                        <div class="card-body">
+                            <h3 class="card-title">Dr . Arif</h3>
+                            <p class="card-text fs-5">Dr. Arif Siddiqui, known as the “Trainer of Trainers,” is a
+                                distinguished expert in personal development and peak performance with a PhD and Master
+                                Hypnotist Certification.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer text-center bg-white fs-5 mt-5 text-success pt-5 pb-3 text-md-start">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <h4 class="text-uppercase mb-3">Aerobics & Meditation</h4>
+                        <p>Your wellness and mindfulness journey <br>starts here. Join our classes to enhance <br>your
+                            physical & mental health.</p>
+                    </div>
+
+                    <div class="col-md-6 mb-4 ps-5">
+                        <h4 class="text-uppercase mb-3">Quick Links</h4>
+                        <div class="list-div d-flex gap-5">
+                            <ul class="list-unstyled">
+                                <li><a href="/html/index.html" class="text-decoration-none text-success">Home</a></li>
+                                <li><a href="/html/aerobics.html" class="text-decoration-none text-success">Aerobics</a>
+                                </li>
+                                <li><a href="/html/meditation.html"
+                                        class="text-decoration-none text-success">Meditation</a></li>
+                            </ul>
+                            <ul class="list-unstyled ms-4">
+                                <li><a href="/html/classes.html" class="text-decoration-none text-success">Classes</a>
+                                </li>
+                                <li><a href="/html/about.html" class="text-decoration-none text-success">About us</a>
+                                </li>
+                                <li><a href="/html/contact.html" class="text-decoration-none text-success">Contact
+                                        us</a></li>
+                            </ul>
+                            <ul class="list-unstyled ms-4">
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mt-5 mb-4">
+                        <h4 class="text-uppercase">Contact Link's</h4>
+                        <p>Email: info@aerobicsmeditation.com</p>
+                        <p>Phone: +92 300 1234567</p>
+                        <div class="social-icons">
+                            <a href="https://facebook.com" aria-label="Facebook"
+                                class="text-decoration-none text-success"><ion-icon name="logo-facebook"></ion-icon>
+                                Facebook</a>
+                            <a href="https://instagram.com" aria-label="Instagram"
+                                class="text-decoration-none text-success"><ion-icon name="logo-instagram"></ion-icon>
+                                Instagram</a>
+                            <a href="https://twitter.com" aria-label="Twitter"
+                                class="text-decoration-none text-success"><ion-icon name="logo-twitter"></ion-icon>
+                                Twitter</a>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="text-center pt-3">
+                    &copy; 2025 Aerobics & Meditation. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

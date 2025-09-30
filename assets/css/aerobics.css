@@ -1,0 +1,38 @@
+body {
+    overflow-x: hidden;
+}
+
+.logo{
+    height: 8vh;
+    width: 4vw;
+}
+.second-h3{
+    text-decoration: underline;
+    text-underline-offset: 0.7rem;
+}
+.second-img1{
+    width: 25vw;
+}
+.card-img-1{
+    height: 40vh;   
+}
+.card-img-2{
+    height: 30vh;   
+}
+.strength{
+    height: 30vh;
+}
+
+@media (max-width:750px){
+    .second-img1{
+        width: 50vw;
+    }
+    .logo{
+        width: 8vw;
+    }
+}
+@media (max-width:346px){
+    .logo{
+        width: 11vw;
+    }
+}
