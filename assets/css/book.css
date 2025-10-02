@@ -1,0 +1,30 @@
+.logo {
+    height: 8vh;
+    width: 4vw;
+}
+
+
+.book-title {
+    color: #198754;
+}
+
+.container {
+    max-width: 960px;
+}
+@media (max-width:960px){
+    .quick-link-div{
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width:726px) {
+    .logo{
+        width: 8vw;
+    }
+
+}
+@media (max-width:346px){
+    .logo{
+        width: 11vw;
+    }
+}

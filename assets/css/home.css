@@ -2,12 +2,6 @@
     height: 8vh;
     width: 4vw;
 }
-.hero-btn{
-    transition: all ease-in-out 5s;
-}
-.hero-btn:hover{
-    transform: translateY(-15px);
-}
 .key-info {
     font-size: 3.6rem;
 }
