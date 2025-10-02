@@ -1,7 +1,3 @@
-body {
-    overflow-x: hidden;
-}
-
 .logo{
     height: 8vh;
     width: 4vw;
@@ -11,24 +7,43 @@ body {
     text-underline-offset: 0.7rem;
 }
 .second-img1{
-    width: 25vw;
+    width: 100%;
+    height: 100%;
 }
 .card-img-1{
-    height: 40vh;   
+    height: 100%;   
 }
 .card-img-2{
-    height: 30vh;   
+    height: 100%;   
 }
 .strength{
     height: 30vh;
 }
 
+
+@media (max-width:950px){
+    .quick-link-div{
+        justify-content: center;
+    }
+}
 @media (max-width:750px){
     .second-img1{
-        width: 50vw;
+        width: 100%;
+        height: 100%;
     }
     .logo{
         width: 8vw;
+    }
+    .strength{
+        width: 100%;
+        height: 100%;
+    }
+    .last-p{
+        margin-left: 2px;
+        text-align: center;
+    }
+    .second-p1{
+        padding-top: 1.5rem;
     }
 }
 @media (max-width:346px){

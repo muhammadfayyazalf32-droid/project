@@ -35,3 +35,21 @@ body {
     height: 8vh;
     width: 4vw;
 }
+
+@media (max-width:950px) {
+    .quick-link-div {
+        justify-content: center;
+    }
+}
+
+@media (max-width:726px) {
+    .logo {
+        width: 8vw;
+    }
+}
+
+@media (max-width:346px) {
+    .logo {
+        width: 11vw;
+    }
+}

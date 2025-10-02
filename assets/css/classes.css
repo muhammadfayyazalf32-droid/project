@@ -12,6 +12,12 @@ body{
 .card2{
     height: 50vh;
 }
+
+@media (max-width:950px){
+    .quick-link-div{
+        justify-content: center;
+    }
+}
 @media (max-width:846px){
     .card2{
         height: 23vh;
