@@ -19,6 +19,36 @@
     height: 60vh;
     border: 2px solid;
 }
+.mybtn{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 16rem;
+    color: white;
+    font-size: larger;
+    border-color: green;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: green;
+}
+.mybtn1{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: white;
+    font-size: larger;
+    border-color: green;
+    margin-left: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: green;
+}
+#book-1{
+    width: 100%;
+    position: absolute;
+}
 @media (max-width:960px){
     .img1{
         width: 100%;

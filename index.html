@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="/assets/css/home.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -48,46 +51,20 @@
         </div>
     </nav>
     <section class="hero container pb-5">
-        <div class="hero-main-container bg-white mt-4 rounded-5 row align-items-center">
-            <div class="text-div col-md-6" data-aos="fade-right" data-aos-duration="2000" data-aos-offset="300"
+        <div class="hero-main-container bg-white mt-4 rounded-5 row d align-items-center">
+            <div class="text-div col-md-6 d-inline-flex" data-aos="fade-right" data-aos-duration="2000" data-aos-offset="300"
                 data-aos-easing="ease-in-sine">
-                <h1 class="text-h1 text-success ms-4">Mind Flex</h1>
+                <div class="txt-div">
+                    <h1 class="text-h1 text-success ms-4">Mind Flex</h1>
                 <p class="text-para1 ms-4 text-success fs-5">Energize your life with fun and dynamic aerobics! Join us
                     today and feel the beat
                     of fitness as you transform your body, boost your confidence,and shine.</p>
-                <button type="button" class="hero-btn btn btn-success ms-4" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal" data-bs-whatever="@mdo">Book classes</button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="recipient-name" class="col-form-label">Recipient:</label>
-                                        <input type="text" class="form-control" id="recipient-name">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="message-text" class="col-form-label">Class name:</label>
-                                        <textarea class="form-control" id="message-text"></textarea>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Send message</button>
-                            </div>
-                        </div>
-                    </div>
+                <button class="hero-btn btn btn-success ms-4">Book Classes</button>
                 </div>
+                <div class="div-hero"></div>
             </div>
             <div class="img-div col-md-6">
-                <img src="/assets/images/hero-img.png" alt="img">
+                <img src="/assets/images/hero-img.png" alt="img" class="">
             </div>
         </div>
     </section>
@@ -220,7 +197,7 @@
             </div>
         </div>
     </section>
-   <footer class="footer text-center bg-white fs-5 text-success mt-5 pt-5 pb-5 text-md-start">
+    <footer class="footer text-center bg-white fs-5 text-success mt-5 pt-5 pb-5 text-md-start">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mb-4 mb-md-0">
@@ -275,6 +252,20 @@
             </div>
         </div>
     </footer>
+    <script>
+        $(document).ready(function () {
+            $(".hero-btn").click(function () {
+                $(".div-hero").html("<div class=card id=book-1><div class=card-header><h2>Book a Class</h2></div><div class=card-body><form><label for=name> Name :</label><input type=name id=name placeholder=Enter your name class=input-group-text mb-3 form-control required><label for=email class=form-label>Email address <sup class=text-danger>*</sup></label><input type=email class=form-control id=email placeholder=name@example.com required /><label>Classes names :<sup class=text-danger>*</sup></label><textarea class=form-control mb-3 id=message-text required></textarea></form><button class=mybtn>Close</button><button class=mybtn1 btn type=submit>Send message</button></div></div>")
+            })
+        });
+        $(document).on("click",".mybtn",function(){
+        $("#book-1").hide() 
+        });
+        $(document).on("click",".mybtn1",function(){
+        alert("Message Has Been sent") 
+        });
+        
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
